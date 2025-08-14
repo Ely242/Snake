@@ -7,7 +7,6 @@ LDFLAGS = -Llib -lraylib -lopengl32 -lgdi32 -lwinmm
 SRC_DIR = src
 OBJ_DIR = obj
 BIN_DIR = .
-IMG_DIR = images
 
 # Files
 SRC = $(SRC_DIR)/main.cpp
