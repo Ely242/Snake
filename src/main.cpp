@@ -50,7 +50,7 @@ public:
     Texture2D texture;
 
     Food(const set<pair<int, int>>& bodySet) {
-        Image image = LoadImage("images/apple.png");
+        Image image = LoadImage("../Graphics/apple.png");
         texture = LoadTextureFromImage(image);
         UnloadImage(image);
         position = GenerateRandomPosition(bodySet);
