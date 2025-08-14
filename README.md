@@ -1,8 +1,7 @@
 # Snake Game (C++ with Raylib)
 
 ## 📜 Description
-A modern, smooth version of the classic Snake game written in **C++** using the **Raylib** graphics library.  
-This version includes **improved input handling** to prevent accidental self-collisions when pressing keys too quickly.
+A remake of the classic Snake game written in **C++** using the **Raylib** graphics library.  
 
 ---
 
@@ -15,8 +14,6 @@ This version includes **improved input handling** to prevent accidental self-col
 ---
 
 ## ✨ Features
-- **Smooth Movement** – Snake moves at fixed time intervals.
-- **Safe Input Handling** – No more instant reversal into yourself.
 - **Random Food Placement** – Apples always spawn in empty spaces.
 - **Score & High Score Display** – Real-time tracking.
 - **Clean Graphics** – Simple, modern design.
