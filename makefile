@@ -1,24 +1,34 @@
 # Compiler and flags
 CXX = g++
-CXXFLAGS = -std=c++17 -Iinclude
-
-# Raylib link flags (adjust path if needed)
+CXXFLAGS = -std=c++17 -Wall -Iinclude
 LDFLAGS = -Llib -lraylib -lopengl32 -lgdi32 -lwinmm
 
-# Source and output
-SRC = src/main.cpp
-OUT = snake
+# Directories
+SRC_DIR = src
+OBJ_DIR = obj
+BIN_DIR = .
+IMG_DIR = images
+
+# Files
+SRC = $(SRC_DIR)/main.cpp
+OBJ = $(OBJ_DIR)/main.o
+TARGET = $(BIN_DIR)/game.exe
 
 # Default target
-all: $(OUT)
+all: $(TARGET)
 
-$(OUT): $(SRC)
-	$(CXX) $(SRC) -o $(OUT) $(CXXFLAGS) $(LDFLAGS)
+# Compile
+$(TARGET): $(OBJ)
+	$(CXX) $(OBJ) -o $(TARGET) $(LDFLAGS)
 
-# Run the game (Windows)
-run: $(OUT)
-	./$(OUT)
+$(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp
+	@mkdir -p $(OBJ_DIR)
+	$(CXX) $(CXXFLAGS) -c $< -o $@
+
+# Run game
+run: all
+	./game.exe
 
 # Clean build files
 clean:
-	rm -f $(OUT)
+	rm -rf $(OBJ_DIR) $(TARGET)
