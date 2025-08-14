@@ -35,5 +35,5 @@ A remake of the classic Snake game written in **C++** using the **Raylib** graph
 
 ## Running the Game
 
-`g++ main.cpp -o snake -lraylib -lm -ldl -lpthread`
-`./snake`
+- `g++ main.cpp -o snake -lraylib -lm -ldl -lpthread`
+- `./snake`
