@@ -3,6 +3,8 @@
 ## 📜 Description
 A remake of the classic Snake game written in **C++** using the **Raylib** graphics library.  
 
+![snake game screenshot](Graphics/snake-game.png)
+
 ---
 
 ## 🎮 Gameplay
