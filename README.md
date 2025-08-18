@@ -30,7 +30,7 @@ A remake of the classic Snake game written in **C++** using the **Raylib** graph
 ## 📦 Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/snake-game-raylib.git
+   git clone https://github.com/Ely242/snake-game-raylib.git
    cd snake-game-raylib
 
 ## Running the Game
